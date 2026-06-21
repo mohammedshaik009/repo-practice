@@ -1,4 +1,11 @@
 #!/bin/bash
 
-echo "removing my mysql"
-dnf remove mysql -y
+USERID=$(id -u)
+#check root access or not
+
+if [ $USERID -ne 0 ];then
+    echo "please run this script with root access"
+fi
+
+echo "im installing mysql"
+    dnf install mysql -y
