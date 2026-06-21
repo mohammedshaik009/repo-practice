@@ -8,3 +8,6 @@ if [ $USERID -ne 0 ];then
 fi
 
 echo "im contiuning"
+
+echo "installing my mysql"
+dnf install mysql -y
