@@ -2,9 +2,7 @@
 
 USERID=$(id -u)
 #check root access or not 
-
 if [ $USERID -ne 0 ];then
-    echo "please run this script wuth root access"
+    echo "please run this script with root access"
 fi
-
-echo "im continuing"
+echo "im contiuning"
