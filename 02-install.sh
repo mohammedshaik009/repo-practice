@@ -10,9 +10,3 @@ exit 1
 
 echo "removing MYSQL"
 dnf remove mysql -y
-
-if [ $? -1];then
-    echo "removing mysql is sucess"
-else 
-    echo "removing mysql is failed"
-fi
