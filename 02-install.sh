@@ -7,9 +7,11 @@ if [ $USERID -ne 0 ];then
     echo "please run this script with root access"
 fi
 
-echo "im installing mysql"
-    dnf install mysqlsdfesf -y
+echo "installing mysql"
+    dnf install mysql -y
 
-echo "im continuing"
-
-echo "im still continung"
+if [ $? -ne 0 ];then
+    echo "installing MYSQL is ...FAILED"
+    exit 1
+else 
+    echo "installing mysql is success"
