@@ -7,5 +7,9 @@ if [ $USERID -ne 0 ];then
     echo "please run this script with root access"
 fi
 
-echo "im removing mysql"
-    dnf remove mysql -y
+echo "im installing mysql"
+    dnf install mysqlsdfesf -y
+
+echo "im continuing"
+
+echo "im still continung"
